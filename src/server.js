@@ -93,7 +93,6 @@ server.get("/search", (req,res) =>{
             return console.log(err)
         }
         const total = rows.length
-        console.log(rows)
         //mostrrar a pagina html com os dados do banco de dados
         return res.render("search-results.html", {places:rows, total: total})
     })
